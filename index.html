@@ -13,9 +13,7 @@
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "l9y187VzNxI3u92QF",
-            });
+            emailjs.init("l9y187VzNxI3u92QF");
         })();
     </script>
     <script type="text/javascript">
@@ -127,7 +125,7 @@
                         <div class="body">
                             <img src="imgs/toolbox.svg" class="icon">
                             <h6 class="title">System Development</h6>
-                            <p class="subtitle">I enagage in designing, creating, and maintaining software or hardware systems to meet specific goals and requirements</p>
+                            <p class="subtitle">I engage in designing, creating, and maintaining software or hardware systems to meet specific goals and requirements</p>
                         </div>
                     </div>
                 </div>
@@ -156,8 +154,8 @@
                         <img src="imgs/sport.PNG" class="portfolio-card-img">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Spotify</h5>
-                                    <p class="font-weight-normal">Web Development</p>
+                                <h4>Spotify</h4>
+                                <p class="font-weight-normal">Web Development</p>
                             </span>
                         </span>
                     </a>
@@ -167,8 +165,8 @@
                         <img class="portfolio-card-img" src="imgs/app.PNG" class="img-responsive rounded">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Sci-Culum Application</h5>
-                                    <p class="font-weight-normal">Application design and Development</p>
+                                <h4>Sci-Culum Application</h4>
+                                <p class="font-weight-normal">Application design and Development</p>
                             </span>
                         </span>
                     </a>
@@ -178,8 +176,8 @@
                         <img class="portfolio-card-img" src="imgs/css challenge.PNG" class="img-responsive rounded">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Shoe card challenge</h5>
-                                    <p class="font-weight-normal">Web Development</p>
+                                <h4>Shoe card challenge</h4>
+                                <p class="font-weight-normal">Web Development</p>
                             </span>
                         </span>
                     </a>
@@ -191,8 +189,8 @@
                         <img src="imgs/social.PNG" class="portfolio-card-img">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Social Media Webiste</h5>
-                                    <p class="font-weight-normal">Web Development</p>
+                                <h4>Social Media Website</h4>
+                                <p class="font-weight-normal">Web Development</p>
                             </span>
                         </span>
                     </a>
@@ -202,8 +200,8 @@
                         <img class="portfolio-card-img" src="imgs/street.PNG" class="img-responsive rounded">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Street Parking App</h5>
-                                    <p class="font-weight-normal">Web Development</p>
+                                <h4>Street Parking App</h4>
+                                <p class="font-weight-normal">Web Development</p>
                             </span>
                         </span>
                     </a>
@@ -213,8 +211,8 @@
                         <img class="portfolio-card-img" src="imgs/image.png" class="img-responsive rounded">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Brainy Battle System</h5>
-                                    <p class="font-weight-normal">Mobile App Development</p>
+                                <h4>Brainy Battle System</h4>
+                                <p class="font-weight-normal">Mobile App Development</p>
                             </span>
                         </span>
                     </a>
@@ -227,8 +225,8 @@
                         <img class="portfolio-card-img" src="imgs/environment.png" class="img-responsive rounded">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Sustainable Environment</h5>
-                                    <p class="font-weight-normal">Web Development</p>
+                                <h4>Sustainable Environment</h4>
+                                <p class="font-weight-normal">Web Development</p>
                             </span>
                         </span>
                     </a>
@@ -238,8 +236,8 @@
                         <img class="portfolio-card-img" src="imgs/folio-1.PNG" class="img-responsive rounded">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Sales Dashboard</h5>
-                                    <p class="font-weight-normal">Front End Development</p>
+                                <h4>Sales Dashboard</h4>
+                                <p class="font-weight-normal">Front End Development</p>
                             </span>
                         </span>
                     </a>
@@ -249,8 +247,8 @@
                         <img src="imgs/aibiotutor.png" style="height: 200px; width: 100%;" class="img-responsive rounded">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>AIBioTutor</h5>
-                                    <p class="font-weight-normal">Mobile App Development</p>
+                                <h4>AIBioTutor</h4>
+                                <p class="font-weight-normal">Mobile App Development</p>
                             </span>
                         </span>
                     </a>
@@ -283,13 +281,13 @@
             <form id="contact-form" action="" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                        <input type="text" name="user_name" size="50" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                        <input type="email" name="user_email" class="form-control" placeholder="Enter Email" required>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                        <textarea name="message" id="comment" rows="6" class="form-control"
                             placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
@@ -318,8 +316,6 @@
 
     <!-- core  -->
     <script src="nav.js"></script>
-
-
     <script src="tyson.js"></script>
 
 </body>
