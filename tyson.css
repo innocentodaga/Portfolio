@@ -7568,6 +7568,9 @@ p {
 .portfolio-card .portfolio-card-img {
   width: 100%;
 }
+.ai{
+  height: 80%;
+}
 
 .portfolio-card .portfolio-card-overlay {
   position: absolute;
