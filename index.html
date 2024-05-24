@@ -20,7 +20,7 @@
     </script>
     <script type="text/javascript">
         window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+            document.getElementById('contact').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_service', 'contact_form', this)
@@ -275,7 +275,7 @@
         </div> <!-- end of container -->
     </section> <!-- end of section -->
     <!-- contact section -->
-    <section class="section" id="contact-form">
+    <section class="section" id="contact">
         <div class="container text-center">
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
