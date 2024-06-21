@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +11,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            // https://dashboard.emailjs.com/admin/account
+            // Initialize EmailJS with your user ID
             emailjs.init("l9y187VzNxI3u92QF");
         })();
     </script>
@@ -20,18 +19,19 @@
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
+                
+                emailjs.sendForm('service_7ozcwar', 'contact-form', this)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        alert('Message sent successfully!');
+                    }, function(error) {
                         console.log('FAILED...', error);
+                        alert('Failed to send the message. Please try again later.');
                     });
             });
         }
     </script>
 </head>
-
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- Page Navbar -->
@@ -318,5 +318,4 @@
     <script src="tyson.js"></script>
 
 </body>
-
 </html>
