@@ -7,32 +7,14 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="tyson.css">
+    <!-- favicon -->
+    <link rel="icon" href="imgs/TYSON.png" type="image/png">
+    <link rel="apple-touch-icon" href="imgs/TYSON.png">
     
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // Initialize EmailJS with your user ID
-            emailjs.init("l9y187VzNxI3u92QF");
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                
-                emailjs.sendForm('service_7ozcwar', 'contact-form', this)
-                    .then(function(response) {
-                        console.log('SUCCESS!', response.status, response.text);
-                        alert('Message sent successfully!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                        alert('Failed to send the message. Please try again later.');
-                    });
-            });
-        }
-    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body data-spy="scroll" data-target=".navbar" data-offset="40">
+    <a href="#main-content" class="skip-link">Skip to content</a>
 
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
@@ -74,13 +56,14 @@
             <a href="#portfolio"><button class="btn btn-primary">Visit My Works</button></a>
         </div>
     </header>
+    <main id="main-content">
     <!-- about section -->
     <section class="section pt-0" id="about">
         <div class="container text-center">
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="imgs/SocialBook Cartoonizer Shadow Self.jpeg" class="about-img"
-                        alt="Innocent Odaga">
+                    <img src="imgs/SocialBook Cartoonizer Shadow Self.jpeg" loading="lazy" class="about-img"
+                        alt="Portrait of Innocent Odaga">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
@@ -105,7 +88,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="imgs/pencil-case.svg" class="icon">
+                            <img src="imgs/pencil-case.svg" loading="lazy" class="icon" alt="UI/UX icon">
                             <h6 class="title">UI/UX Design</h6>
                             <p class="subtitle">The focus is on creating interfaces and experiences that are user-friendly and engaging</p>
                         </div>
@@ -114,7 +97,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="imgs/responsive.svg" class="icon">
+                            <img src="imgs/responsive.svg" loading="lazy" class="icon" alt="Responsive web icon">
                             <h6 class="title">Web Development</h6>
                             <p class="subtitle">From designing the visual layout and user interface to coding the functionality and ensuring smoothness across different devices and browsers</p>
                         </div>
@@ -123,7 +106,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="imgs/toolbox.svg" class="icon">
+                            <img src="imgs/toolbox.svg" loading="lazy" class="icon" alt="Toolbox icon">
                             <h6 class="title">System Development</h6>
                             <p class="subtitle">I engage in designing, creating, and maintaining software or hardware systems to meet specific goals and requirements</p>
                         </div>
@@ -132,7 +115,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="imgs/analytics.svg" class="icon">
+                            <img src="imgs/analytics.svg" loading="lazy" class="icon" alt="Analytics icon">
                             <h6 class="title">Design</h6>
                             <p class="subtitle">Design Mobile Applications, Websites and the different systems depending on the client's choices.</p>
                         </div>
@@ -151,7 +134,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img src="imgs/sport.PNG" class="portfolio-card-img">
+                        <img src="imgs/sport.PNG" loading="lazy" class="portfolio-card-img" alt="Spotify project screenshot">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Spotify</h4>
@@ -162,7 +145,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="imgs/app.PNG" class="img-responsive rounded">
+                        <img class="portfolio-card-img" src="imgs/app.PNG" loading="lazy" alt="Sci-Culum Application screenshot">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Sci-Culum Application</h4>
@@ -173,7 +156,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="imgs/css challenge.PNG" class="img-responsive rounded">
+                        <img class="portfolio-card-img" src="imgs/css challenge.PNG" loading="lazy" alt="Shoe card challenge screenshot">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Shoe card challenge</h4>
@@ -186,7 +169,7 @@
             <div class="row" style="margin-top: 40px;">
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img src="imgs/social.PNG" class="portfolio-card-img">
+                        <img src="imgs/social.PNG" loading="lazy" class="portfolio-card-img" alt="Social media website screenshot">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Social Media Website</h4>
@@ -197,7 +180,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="imgs/street.PNG" class="img-responsive rounded">
+                        <img class="portfolio-card-img" src="imgs/street.PNG" loading="lazy" alt="Street Parking App screenshot">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Street Parking App</h4>
@@ -208,7 +191,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="imgs/image.png" class="img-responsive rounded">
+                        <img class="portfolio-card-img" src="imgs/image.png" loading="lazy" alt="Brainy Battle System screenshot">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Brainy Battle System</h4>
@@ -222,7 +205,7 @@
             <div class="row" style="margin-top: 40px;">
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="imgs/environment.png" class="img-responsive rounded">
+                        <img class="portfolio-card-img" src="imgs/environment.png" loading="lazy" alt="Sustainable Environment site screenshot">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Sustainable Environment</h4>
@@ -233,7 +216,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="imgs/folio-1.PNG" class="img-responsive rounded">
+                        <img class="portfolio-card-img" src="imgs/folio-1.PNG" loading="lazy" alt="Sales Dashboard screenshot">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Sales Dashboard</h4>
@@ -244,7 +227,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img src="imgs/aibiotutor.png" style="height: 200px; width: 100%;" class="img-responsive rounded">
+                        <img src="imgs/aibiotutor.png" loading="lazy" style="height: 200px; width: 100%;" class="img-responsive rounded" alt="AIBioTutor app image">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>AIBioTutor</h4>
@@ -278,25 +261,29 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form id="contact-form" action="" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form id="contact-form" action="" class="contact-form col-md-10 col-lg-8 m-auto" aria-label="Contact form">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" name="user_name" size="50" class="form-control" placeholder="Your Name" required>
+                        <input type="text" name="user_name" size="50" class="form-control" placeholder="Your Name" required aria-label="Your name">
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" name="user_email" class="form-control" placeholder="Enter Email" required>
+                        <input type="email" name="user_email" class="form-control" placeholder="Enter Email" required aria-label="Your email">
                     </div>
                     <div class="form-group col-sm-12">
                         <textarea name="message" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
+                            placeholder="Write Something" aria-label="Message" required></textarea>
                     </div>
+                        <!-- Ensure messages are delivered to the owner's email: -->
+                        <input type="hidden" name="to_email" value="innocentodaga11@gmail.com">
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                        <button type="submit" class="btn btn-outline-primary rounded">Send Message</button>
                     </div>
+                        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
                 </div>
             </form><!-- end of contact form -->
         </div><!-- end of container -->
     </section><!-- end of contact section -->
+    </main>
     <!-- footer -->
     <div class="container">
         <footer class="footer">
@@ -306,16 +293,84 @@
                     href="#">By Innocent</a>
             </p>
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="innocentodaga11@gmail.com" ><i class="ti-email"></i></a>
-                <a href="https://github.com/innocentodaga" class="link"><i class="ti-github"></i></a>
-                <a href="https://www.linkedin.com/in/innocent-odaga-08b420288/" class="link"><i class="ti-linkedin"></i></a>
+                <a href="mailto:innocentodaga11@gmail.com" aria-label="Email"><i class="ti-email"></i></a>
+                <a href="https://github.com/innocentodaga" class="link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="ti-github"></i></a>
+                <a href="https://www.linkedin.com/in/innocent-odaga-08b420288/" class="link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ti-linkedin"></i></a>
             </div>
         </footer>
     </div> <!-- end of page footer -->
 
     <!-- core  -->
-    <script src="nav.js"></script>
-    <script src="tyson.js"></script>
+    <script defer src="nav.js"></script>
+    <script defer src="tyson.js"></script>
+
+    <!-- Initialize EmailJS and attach contact form handler in a safe, modern way -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.emailjs && typeof emailjs.init === 'function') {
+                emailjs.init('l9y187VzNxI3u92QF');
+            }
+
+            var form = document.getElementById('contact-form');
+            var formStatus = document.getElementById('form-status');
+            if (form) {
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    if (window.emailjs && typeof emailjs.sendForm === 'function') {
+                        emailjs.sendForm('service_rpk22mj', 'template_hkw7bqq', this)
+                            .then(function(response) {
+                                console.log('SUCCESS!', response.status, response.text);
+                                showFormStatus('Message sent successfully!', 'success');
+                            }, function(error) {
+                                console.error('FAILED...', error);
+                                // Display the error message and provide an action link to open the user's email client
+                                var formData = new FormData(form);
+                                var subject = 'Contact from website: ' + (formData.get('user_name') || 'Website visitor');
+                                var body = 'Name: ' + (formData.get('user_name') || '') + '\n';
+                                body += 'Email: ' + (formData.get('user_email') || '') + '\n\n';
+                                body += formData.get('message') || '';
+                                var mailto = 'mailto:innocentodaga11@gmail.com'
+                                    + '?subject=' + encodeURIComponent(subject)
+                                    + '&body=' + encodeURIComponent(body);
+
+                                var friendly = 'Failed to send via the contact service.' + (error && error.text ? ' ' + error.text : '');
+                                showFormStatus(friendly, 'error', {actionText: 'Open email client', actionHref: mailto});
+                            });
+                    } else {
+                        console.warn('EmailJS is not available.');
+                        showFormStatus('Messaging service is not available. Please contact via email: innocentodaga11@gmail.com', 'error');
+                    }
+                });
+            }
+
+            function showFormStatus(message, type, opts) {
+                if (!formStatus) return alert(message);
+                formStatus.textContent = '';
+                formStatus.classList.remove('success', 'error');
+                formStatus.classList.add(type || '');
+                // message text
+                var text = document.createElement('span');
+                text.textContent = message;
+                formStatus.appendChild(text);
+
+                // optional action link (e.g., mailto fallback)
+                if (opts && opts.actionText && opts.actionHref) {
+                    var link = document.createElement('a');
+                    link.href = opts.actionHref;
+                    link.textContent = opts.actionText;
+                    link.className = 'btn btn-link';
+                    link.style.marginLeft = '0.5rem';
+                    formStatus.appendChild(link);
+                }
+
+                formStatus.classList.add('show');
+                // Hide after 12s
+                setTimeout(function () {
+                    formStatus.classList.remove('show');
+                }, 12000);
+            }
+        });
+    </script>
 
 </body>
 </html>
